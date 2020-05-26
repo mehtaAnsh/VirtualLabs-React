@@ -1,0 +1,26 @@
+@media screen and (min-width: 600px) {                
+    .navbar .links{
+        padding-left: 76%;
+        padding-top: 30px;
+    }                
+}   
+@media screen and (max-width: 600px){
+    .navbar-logo {
+        width: 200px;
+    }
+}
+@media (min-width: 1100px){
+    .container {
+        min-width: 1280px;
+    }
+}
+.navbar {
+    padding-top: 0px;  
+    max-height: 120px;          
+    font-family: Arial, Helvetica, sans-serif;                                 
+}
+.navbar-logo {
+    max-height: 100px;
+    max-width: 350px;
+    padding-bottom: 3%;
+}
