@@ -1,0 +1,62 @@
+:root {
+    --pink: #ffbed1;
+    --blue: #bdd4ff;
+    --green: #a5ffec;
+    --yellow: #ffff99;
+    --purple: #eebbfa;
+    --gray: #dee2e1;
+}
+.box-theme {
+    background-color: var(--pink);
+    border-radius: 10px;
+    max-width: max-content;                                        
+}
+.box-theme h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.theme-title {
+    max-width: 900px;
+    background-color: var(--blue); 
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.menu {
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 1000px;
+}
+.activity-head-1 {
+    background-color: var(--pink);
+    border-radius: 10px;
+}
+.activity-1{
+    border: 2px solid var(--pink);
+}
+.activity-head-2 {
+    background-color: var(--green);
+    border-radius: 10px;
+}
+.activity-2{
+    border: 2px solid var(--green);
+}
+.activity-head-3 {
+    background-color: var(--yellow);
+    border-radius: 10px;
+}
+.activity-3{
+    border: 2px solid var(--yellow);
+}
+.activity-head-4 {
+    background-color: var(--blue);
+    border-radius: 10px;
+}
+.activity-4{
+    border: 2px solid var(--blue);
+}
+.activity-head-5 {
+    background-color: var(--purple);
+    border-radius: 10px;
+}
+.activity-5{
+    border: 2px solid var(--purple);
+}

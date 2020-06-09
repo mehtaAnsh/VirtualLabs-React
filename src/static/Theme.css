@@ -1,0 +1,51 @@
+:root {
+    --pink: #ffbed1;
+    --blue: #bdd4ff;
+    --green: #a5ffec;
+    --yellow: #ffff99;
+    --purple: #eebbfa;
+    --gray: #dee2e1;
+}
+.box-theme {
+    background-color: var(--pink);
+    border-radius: 10px;
+    max-width: max-content;                                        
+}
+.box-theme h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu {
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 1000px;
+}
+.theme-card-1{
+    background-color: var(--blue);
+    border-radius: 10px;
+    height: 120px;
+}
+.theme-card-2{
+    background-color: var(--yellow);
+    border-radius: 10px;
+    height: 120px;
+}
+.theme-card-3{
+    background-color: var(--green);
+    border-radius: 10px;
+    height: 120px;
+}
+.theme-card-4{
+    background-color: var(--purple);
+    border-radius: 10px;
+    height: 120px;
+}
+.theme-card-5{
+    background-color: var(--pink);
+    border-radius: 10px;
+    height: 120px;
+}
+.theme-card-6{
+    background-color: var(--blue);
+    border-radius: 10px;
+    height: 120px;
+}

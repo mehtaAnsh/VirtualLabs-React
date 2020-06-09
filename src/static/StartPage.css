@@ -1,0 +1,97 @@
+body {
+	overflow-x: hidden;
+}
+a:link {
+	text-decoration: none;
+	color: black;
+	font-size: large;
+}
+a:hover {
+	text-decoration: none;
+}
+a:visited {
+	color: black;
+}
+.boxx {
+	/*margin-top: 15vh;*/
+	background-color: #fcabc2;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	border-radius: 10px;
+	margin-bottom: 10vh;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.boxx .text {
+	font-size: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.7rem;
+	margin-top: 7vh;
+}
+
+.stds {
+	/*transform: rotate(270deg);                            */
+	height: 8vh;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: xx-large;
+}
+.levels {
+	background-color: #fcabc2;
+	border-radius: 10px;
+	padding-bottom: 53%;
+	margin-bottom: 11%;
+	padding-right: -5%;
+	max-width: 100%;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Times New Roman', Times, serif;
+	text-align: center;
+	align-content: center;
+	max-height: 90px;
+}
+.levels .text {
+	margin-top: 50%;
+}
+.levelss {
+	background-color: #fcabc2;
+	border-radius: 10px;
+	padding-bottom: 33%;
+	margin-bottom: 7%;
+	padding-right: -5%;
+	max-width: 100%;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Times New Roman', Times, serif;
+	text-align: center;
+	align-content: center;
+	max-height: 60px;
+}
+.levelss .text {
+	margin-top: 25%;
+}
+.card {
+	background-color: #95aedd;
+	border-radius: 10px;
+	width: 18rem;
+	height: 25vh;
+	margin-bottom: 1%;
+	margin-left: 8%;
+}
+.card-1 {
+	background-color: #bdd4ff;
+}
+.card-2 {
+	background-color: #a5ffec;
+}
+.card-3 {
+	background-color: #ffff99;
+}
+.card-4 {
+	background-color: #eebbfa;
+}
+.sections {
+	display: flex;
+	justify-content: center;
+	margin-top: 20%;
+}
