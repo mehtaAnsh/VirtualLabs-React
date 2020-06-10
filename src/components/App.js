@@ -9,7 +9,7 @@ import Theme from './Theme';
 import Activity from './Activity';
 
 class App extends React.Component {
-	state = { loading: true };
+	state = { loading: true, themeVal: 'none', activityVal: '0' };
 
 	componentDidMount() {
 		this.onPageLoader().then(() => this.setState({ loading: false }));
@@ -21,10 +21,24 @@ class App extends React.Component {
 		return new Promise(resolve => setTimeout(() => resolve(), 0));
 	}
 
+	handleThemeClicked = themeVal => {
+		this.setState({ themeVal });
+	};
+
+	handleActivityClicked = activityVal => {
+		this.setState({ activityVal });
+	};
+
 	renderComponents() {
 		if (this.state.loading && !isMobile) {
 			return (
-				<div style={{ marginTop: '-7.5%', marginLeft: '15%', overflowX: 'hidden' }}>
+				<div
+					style={{
+						marginTop: '-7.5%',
+						marginLeft: '15%',
+						overflowX: 'hidden',
+					}}
+				>
 					<FlareComponent file="./rive_files/logo.flr" animationName="logo" width={1000} height={1000} transparent="true" />
 				</div>
 			);
@@ -34,9 +48,13 @@ class App extends React.Component {
 				<BrowserRouter>
 					<BrowserView>
 						<Navbar />
-						<Route path="/" exact component={StartPage} />
-						<Route path="/food" exact component={Theme} />
-						<Route path="/food/1" exact component={Activity} />
+						<Route path="/" exact render={props => <StartPage {...props} handleThemeClicked={this.handleThemeClicked} />} />
+						<Route
+							path={`/${this.state.themeVal}`}
+							exact
+							render={props => <Theme {...props} handleActivityClicked={this.handleActivityClicked} themeVal={this.state.themeVal} />}
+						/>
+						<Route path={`/${this.state.themeVal}/${this.state.activityVal}`} exact component={Activity} />
 					</BrowserView>
 					<MobileView>
 						<Mobile />
@@ -47,7 +65,7 @@ class App extends React.Component {
 	}
 
 	render() {
-		return <div> {this.renderComponents()} </div>;
+		return this.renderComponents();
 	}
 }
 

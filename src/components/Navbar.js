@@ -4,7 +4,7 @@ import '../static/Navbar.css';
 
 class Navbar extends React.Component {
 	renderNavbar() {
-		const dot = window.location.href.indexOf('/food/1') === 1 ? './' : '../';
+		const dot = './';
 
 		return (
 			<div id="navbar">

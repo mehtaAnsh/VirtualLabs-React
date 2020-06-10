@@ -4,6 +4,10 @@ import { Link } from 'react-router-dom';
 import '../static/StartPage.css';
 
 class StartPage extends React.Component {
+	handleThemeClicked = val => {
+		this.props.handleThemeClicked(val);
+	};
+
 	renderStartPage() {
 		return (
 			<div>
@@ -52,7 +56,7 @@ class StartPage extends React.Component {
 						<div className="col-lg-10" style={{ marginRight: '-5%' }}>
 							<div className="row">
 								<div className="col-lg-5 card card-1">
-									<Link to="/food">
+									<Link to="/food" onClick={() => this.handleThemeClicked('food')}>
 										<h2 className="sections">1. Food </h2>
 									</Link>
 								</div>
