@@ -5,7 +5,7 @@ import '../static/Theme.css';
 class Theme extends React.Component {
 	handleActivity = activityVal => {
 		this.props.handleActivityClicked(activityVal);
-		console.log('In theme: ' + this.props.themeVal);
+		//console.log('In theme: ' + this.props.themeVal);
 	};
 
 	renderTheme() {
