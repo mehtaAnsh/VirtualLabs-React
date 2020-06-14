@@ -7,9 +7,10 @@ import Mobile from './Mobile';
 import Navbar from './Navbar';
 import Theme from './Theme';
 import Activity from './Activity';
+import Simulator from './Activity/Simulator';
 
 class App extends React.Component {
-	state = { loading: true, themeVal: 'none', activityVal: '0' };
+	state = { loading: true, themeVal: 'food', activityVal: '1' };
 
 	componentDidMount() {
 		this.onPageLoader().then(() => this.setState({ loading: false }));

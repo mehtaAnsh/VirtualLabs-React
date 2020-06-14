@@ -17,6 +17,7 @@
 	max-height: 100px;
 	margin-left: 1px;
 	margin-right: 1px;
+	background-color: #a5ffec;
 }
 .options:hover {
 	color: #fff !important;

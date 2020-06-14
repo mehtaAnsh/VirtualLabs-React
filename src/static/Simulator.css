@@ -1,0 +1,50 @@
+:root {
+	--pink: #ffbed1;
+	--blue: #bdd4ff;
+	--green: #a5ffec;
+	--yellow: #ffff99;
+	--purple: #eebbfa;
+	--gray: #dee2e1;
+}
+.sim-border {
+	border: 2px solid black;
+	border-radius: 5px;
+}
+.btn-green {
+	background-color: var(--green);
+}
+.btn-purple {
+	background-color: var(--purple);
+}
+.btn-yellow {
+	background-color: var(--yellow);
+}
+.btn-blue {
+	background-color: var(--blue);
+}
+.btn-pink {
+	background-color: var(--pink);
+}
+.btn {
+	width: 300px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 600;
+}
+.headSim {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	background-color: var(--blue);
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 50px;
+	padding-right: 50px;
+	border-radius: 5px;
+}
+@font-face {
+	font-family: 'dustismo-font';
+	src: url('dustismo_bold.ttf');
+}
+.text {
+	font-family: 'dustismo-font', sans-serif;
+	font-weight: bold;
+}

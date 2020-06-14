@@ -31,7 +31,9 @@ class StartPage extends React.Component {
 						</div>
 					</div>
 					<div className="row">
-						<h1 style={{ marginLeft: '52%', marginBottom: '10px', backgroundColor: '#95aedd', borderRadius: '10px' }}>&nbsp; THEMES &nbsp;</h1>
+						<h1 style={{ marginLeft: '52%', marginBottom: '10px', backgroundColor: '#95aedd', borderRadius: '10px' }}>
+							&nbsp; THEMES &nbsp;
+						</h1>
 					</div>
 					<div className="container row" style={{ marginLeft: '-3%' }}>
 						<div className="col-1 stds">
@@ -40,7 +42,7 @@ class StartPage extends React.Component {
 							</p>
 						</div>
 						<div className="col-1">
-							<div className="row levels">
+							<div className="row levels" style={{ backgroundColor: '#bdd4ff' }}>
 								<h4 className="text">VII</h4>
 							</div>
 							<div className="row levels">
