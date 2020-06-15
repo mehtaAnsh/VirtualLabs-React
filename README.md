@@ -15,6 +15,8 @@ npm start
 
 This web app is developed for students so that they can simulate their experiments online, giving them freedom to experiment with their curriculum.
 
+The app version can be seen on: https://github.com/rushankshah/Virtual-Lab
+
 > This was made by Ansh Mehta and Soham Dave.
 
 ![](/ss/homepage.jpg)
