@@ -93,7 +93,7 @@ a:visited {
 .sections {
 	display: flex;
 	justify-content: center;
-	margin-top: 20%;
+	margin-top: 10%;
 }
 .seven {
 	background-color: '#bdd4ff';

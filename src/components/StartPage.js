@@ -60,15 +60,45 @@ class StartPage extends React.Component {
 								<div className="col-lg-5 card card-1">
 									<Link to="/food" onClick={() => this.handleThemeClicked('food')}>
 										<h2 className="sections">1. Food </h2>
+										<div style={{ marginTop: '-20%', marginLeft: '60%' }}>
+											<FlareComponent
+												file="rive_files/plant.flr"
+												animationName="plant"
+												width={200}
+												height={200}
+												transparent={true}
+											/>
+										</div>
 									</Link>
 								</div>
 								<div className="col-lg-5 card card-2">
 									<h2 className="sections">2. Materials</h2>
+									<div style={{ marginTop: '-15%', marginLeft: '60%' }}>
+										<FlareComponent
+											file="rive_files/Material.flr"
+											animationName="Material"
+											width={200}
+											height={200}
+											transparent={true}
+										/>
+									</div>
 								</div>
 							</div>
 							<div className="row">
 								<div className="col-lg-5 card card-3">
-									<h2 className="sections">3. The world of living</h2>
+									<h2 className="sections">
+										3. The world of
+										<br /> living
+									</h2>
+									<div style={{ marginTop: '-25%', marginLeft: '63%' }}>
+										<FlareComponent
+											file="rive_files/dewdrop.flr"
+											animationName="dewdrop"
+											width={200}
+											height={200}
+											transparent={true}
+										/>
+									</div>
 								</div>
 								<div className="col-lg-5 card card-4">
 									<h2 className="sections">4. Some more content...</h2>
@@ -76,9 +106,6 @@ class StartPage extends React.Component {
 							</div>
 						</div>
 					</div>
-					<br />
-					<br />
-					<br />
 				</div>
 			</div>
 		);

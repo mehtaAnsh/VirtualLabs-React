@@ -137,7 +137,7 @@ class Simulator extends React.Component {
 					if (this.state.countInt === 2) this.setState({ message: 'Sprouts become visible.' });
 					else if (this.state.countInt === 3)
 						this.setState({
-							message: 'Sprouts become larger.',
+							message: 'Note: If you want to replay the animation, refresh the webpage.',
 							waterMessage: 'Congratulations on completing the experiment virtually!',
 							end: true,
 						});
@@ -240,7 +240,7 @@ class Simulator extends React.Component {
 					<div className="row justify-content-center pt-3">
 						<div className="col-md-6 mt-5">
 							<div className="sim-border" style={{ width: '600px', height: '500px' }}>
-								<div className="mt-5 ml-5 justify-content-center text">
+								<div className="mt-3 ml-5 justify-content-center texts">
 									<h5>{this.state.message}</h5>
 								</div>
 								<br />
@@ -316,9 +316,9 @@ class Simulator extends React.Component {
 								style={{ display: 'none' }}
 								disabled={this.state.end}
 							>
-								Observe the next day ->
+								Observe the next day
 							</button>
-							<div className="text">{this.state.waterMessage}</div>
+							<div className="texts">{this.state.waterMessage}</div>
 						</div>
 					</div>
 				</div>
