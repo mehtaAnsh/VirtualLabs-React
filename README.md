@@ -17,7 +17,7 @@ This web app is developed for students so that they can simulate their experimen
 
 The app version can be seen on: https://github.com/rushankshah/Virtual-Lab
 
-> This was made by Ansh Mehta and Soham Dave.
+## Screenshots of the app:
 
 ![](/ss/homepage.jpg)
 ![](/ss/list_of_exps.jpg)
@@ -26,3 +26,5 @@ The app version can be seen on: https://github.com/rushankshah/Virtual-Lab
 ![](/ss/daynight.jpg)
 ![](/ss/drain_water.jpg)
 ![](/ss/day3_animation.jpg)
+
+> This was made by Ansh Mehta and Soham Dave. The design was made by Richa Shah and Dhruvil Shah.
