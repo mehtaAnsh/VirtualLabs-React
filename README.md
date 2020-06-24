@@ -28,4 +28,5 @@ The app version can be seen on: https://github.com/rushankshah/Virtual-Lab
 ![](/ss/day3_animation.jpg)
 
 > The Web App was made by Ansh Mehta and Soham Dave. 
+
 > The design was made by Richa Shah and Dhruvil Shah.
