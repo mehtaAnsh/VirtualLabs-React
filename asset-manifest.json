@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/mehtaAnsh/VirtualLabs-Reactstatic/css/main.4037ce2a.chunk.css",
+    "main.js": "/mehtaAnsh/VirtualLabs-Reactstatic/js/main.0d248dfd.chunk.js",
+    "main.js.map": "/mehtaAnsh/VirtualLabs-Reactstatic/js/main.0d248dfd.chunk.js.map",
+    "runtime-main.js": "/mehtaAnsh/VirtualLabs-Reactstatic/js/runtime-main.0d539e3b.js",
+    "runtime-main.js.map": "/mehtaAnsh/VirtualLabs-Reactstatic/js/runtime-main.0d539e3b.js.map",
+    "static/js/2.6746fead.chunk.js": "/mehtaAnsh/VirtualLabs-Reactstatic/js/2.6746fead.chunk.js",
+    "static/js/2.6746fead.chunk.js.map": "/mehtaAnsh/VirtualLabs-Reactstatic/js/2.6746fead.chunk.js.map",
+    "index.html": "/mehtaAnsh/VirtualLabs-Reactindex.html",
+    "precache-manifest.33884cb5c2175b40ad7dc068d1da0a37.js": "/mehtaAnsh/VirtualLabs-Reactprecache-manifest.33884cb5c2175b40ad7dc068d1da0a37.js",
+    "service-worker.js": "/mehtaAnsh/VirtualLabs-Reactservice-worker.js",
+    "static/css/main.4037ce2a.chunk.css.map": "/mehtaAnsh/VirtualLabs-Reactstatic/css/main.4037ce2a.chunk.css.map",
+    "static/js/2.6746fead.chunk.js.LICENSE.txt": "/mehtaAnsh/VirtualLabs-Reactstatic/js/2.6746fead.chunk.js.LICENSE.txt",
+    "static/media/Simulator.css": "/mehtaAnsh/VirtualLabs-Reactstatic/media/dustismo_bold.fa7f5e6a.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0d539e3b.js",
+    "static/js/2.6746fead.chunk.js",
+    "static/css/main.4037ce2a.chunk.css",
+    "static/js/main.0d248dfd.chunk.js"
+  ]
+}
