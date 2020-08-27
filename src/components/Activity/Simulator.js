@@ -50,7 +50,15 @@ class Simulator extends React.Component {
 				this.setState({
 					type: animationName,
 					message: 'Seed selected, now add seeds.',
-					active: { gram: true, moong: true, add_seeds: false, water: true, soak: true, remove: true, cover: true },
+					active: {
+						gram: true,
+						moong: true,
+						add_seeds: false,
+						water: true,
+						soak: true,
+						remove: true,
+						cover: true,
+					},
 				});
 				break;
 
@@ -58,7 +66,15 @@ class Simulator extends React.Component {
 				this.setState({
 					animationName,
 					message: 'Soak 20-25 seeds in a Petri dish or a container filled with water.',
-					active: { gram: true, moong: true, add_seeds: true, water: false, soak: true, remove: true, cover: true },
+					active: {
+						gram: true,
+						moong: true,
+						add_seeds: true,
+						water: false,
+						soak: true,
+						remove: true,
+						cover: true,
+					},
 				});
 				break;
 
@@ -75,7 +91,15 @@ class Simulator extends React.Component {
 						this.setState({
 							animationName: 'waterflow',
 							count: temp,
-							active: { gram: true, moong: true, add_seeds: true, water: false, soak: false, remove: true, cover: true },
+							active: {
+								gram: true,
+								moong: true,
+								add_seeds: true,
+								water: false,
+								soak: false,
+								remove: true,
+								cover: true,
+							},
 						});
 					}, 3000);
 					resolve();
@@ -88,7 +112,15 @@ class Simulator extends React.Component {
 						count: '',
 						message: 'Soak the seeds overnight.',
 						countInt: 0,
-						active: { gram: true, moong: true, add_seeds: true, water: true, soak: false, remove: true, cover: true },
+						active: {
+							gram: true,
+							moong: true,
+							add_seeds: true,
+							water: true,
+							soak: false,
+							remove: true,
+							cover: true,
+						},
 					});
 				break;
 
@@ -98,7 +130,15 @@ class Simulator extends React.Component {
 					message: 'Next day, drain the excess water and cover the seeds with wet cotton cloth.',
 					waterMessage: '',
 					count: 0,
-					active: { gram: true, moong: true, add_seeds: true, water: true, soak: true, remove: false, cover: true },
+					active: {
+						gram: true,
+						moong: true,
+						add_seeds: true,
+						water: true,
+						soak: true,
+						remove: false,
+						cover: true,
+					},
 				});
 
 				document.getElementById('sim').style.display = 'none';
@@ -110,7 +150,15 @@ class Simulator extends React.Component {
 				this.setState({
 					animationName,
 					message: 'Cover the seeds.',
-					active: { gram: true, moong: true, add_seeds: true, water: true, soak: true, remove: true, cover: false },
+					active: {
+						gram: true,
+						moong: true,
+						add_seeds: true,
+						water: true,
+						soak: true,
+						remove: true,
+						cover: false,
+					},
 				});
 				document.getElementById('daynight').style.display = 'none';
 				document.getElementById('remove').style.display = 'block';
@@ -120,7 +168,15 @@ class Simulator extends React.Component {
 			case 'cover':
 				this.setState({
 					animationName,
-					active: { gram: true, moong: true, add_seeds: true, water: true, soak: true, remove: true, cover: true },
+					active: {
+						gram: true,
+						moong: true,
+						add_seeds: true,
+						water: true,
+						soak: true,
+						remove: true,
+						cover: true,
+					},
 				});
 
 				document.getElementById('remove').style.display = 'none';
@@ -131,7 +187,8 @@ class Simulator extends React.Component {
 				break;
 			case 'day':
 				this.setState({ animationName });
-				if (this.state.count === 0) this.setState({ countInt: 1, count: 123, message: 'Little sprouts coming out' });
+				if (this.state.count === 0)
+					this.setState({ countInt: 1, count: 123, message: 'Little sprouts coming out' });
 				else {
 					this.setState({ countInt: this.state.countInt + 1 });
 					if (this.state.countInt === 2) this.setState({ message: 'Sprouts become visible.' });
@@ -146,6 +203,8 @@ class Simulator extends React.Component {
 				document.getElementById('cover').style.display = 'none';
 				document.getElementById('daynight').style.display = 'block';
 				this.renderDayNight(this.state.animationName);
+				break;
+			default:
 				break;
 		}
 
@@ -259,7 +318,12 @@ class Simulator extends React.Component {
 							</div>
 						</div>
 						<div className="col-md-6 mt-5">
-							<div className="btn-group" role="group" aria-label="Basic example" style={{ maxWidth: '300px' }}>
+							<div
+								className="btn-group"
+								role="group"
+								aria-label="Basic example"
+								style={{ maxWidth: '300px' }}
+							>
 								<button
 									type="button"
 									className="btn btn-secondary"
@@ -279,12 +343,20 @@ class Simulator extends React.Component {
 							</div>
 							<br />
 							<br />
-							<button className="btn btn-green" onClick={() => this.changeAnimation('Seeds')} disabled={this.state.active.add_seeds}>
+							<button
+								className="btn btn-green"
+								onClick={() => this.changeAnimation('Seeds')}
+								disabled={this.state.active.add_seeds}
+							>
 								Add Seeds
 							</button>
 							<br />
 							<br />
-							<button className="btn btn-yellow" onClick={() => this.changeAnimation('water')} disabled={this.state.active.water}>
+							<button
+								className="btn btn-yellow"
+								onClick={() => this.changeAnimation('water')}
+								disabled={this.state.active.water}
+							>
 								Add Water
 							</button>
 							<br />
@@ -298,13 +370,21 @@ class Simulator extends React.Component {
 							</button>
 							<br />
 							<br />
-							<button className="btn btn-pink" onClick={() => this.changeAnimation('remove')} disabled={this.state.active.remove}>
+							<button
+								className="btn btn-pink"
+								onClick={() => this.changeAnimation('remove')}
+								disabled={this.state.active.remove}
+							>
 								Drain Water
 							</button>
 
 							<br />
 							<br />
-							<button className="btn btn-blue" onClick={() => this.changeAnimation('cover')} disabled={this.state.active.cover}>
+							<button
+								className="btn btn-blue"
+								onClick={() => this.changeAnimation('cover')}
+								disabled={this.state.active.cover}
+							>
 								Cover Seeds
 							</button>
 							<br />

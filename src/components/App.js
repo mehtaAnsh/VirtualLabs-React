@@ -7,7 +7,6 @@ import Mobile from './Mobile';
 import Navbar from './Navbar';
 import Theme from './Theme';
 import Activity from './Activity';
-import Simulator from './Activity/Simulator';
 
 class App extends React.Component {
 	state = { loading: true, themeVal: 'food', activityVal: '1' };
@@ -17,7 +16,8 @@ class App extends React.Component {
 	}
 
 	onPageLoader() {
-		if (window.location.href.indexOf('/food/1') === -1) return new Promise(resolve => setTimeout(() => resolve(), 5000));
+		if (window.location.href.indexOf('/food/1') === -1)
+			return new Promise(resolve => setTimeout(() => resolve(), 5000));
 
 		return new Promise(resolve => setTimeout(() => resolve(), 0));
 	}
@@ -40,7 +40,13 @@ class App extends React.Component {
 						overflowX: 'hidden',
 					}}
 				>
-					<FlareComponent file="./rive_files/logo.flr" animationName="logo" width={1000} height={1000} transparent="true" />
+					<FlareComponent
+						file="./rive_files/logo.flr"
+						animationName="logo"
+						width={1000}
+						height={1000}
+						transparent="true"
+					/>
 				</div>
 			);
 		}
@@ -49,11 +55,21 @@ class App extends React.Component {
 				<BrowserRouter>
 					<BrowserView>
 						<Navbar />
-						<Route path="/" exact render={props => <StartPage {...props} handleThemeClicked={this.handleThemeClicked} />} />
+						<Route
+							path="/"
+							exact
+							render={props => <StartPage {...props} handleThemeClicked={this.handleThemeClicked} />}
+						/>
 						<Route
 							path={`/${this.state.themeVal}`}
 							exact
-							render={props => <Theme {...props} handleActivityClicked={this.handleActivityClicked} themeVal={this.state.themeVal} />}
+							render={props => (
+								<Theme
+									{...props}
+									handleActivityClicked={this.handleActivityClicked}
+									themeVal={this.state.themeVal}
+								/>
+							)}
 						/>
 						<Route path={`/${this.state.themeVal}/${this.state.activityVal}`} exact component={Activity} />
 					</BrowserView>
