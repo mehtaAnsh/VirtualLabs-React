@@ -27,11 +27,24 @@ class StartPage extends React.Component {
 							</b>
 						</div>
 						<div className="img-fluid float-right">
-							<FlareComponent file="rive_files/lab.flr" animationName="lab" transparent="true" width={600} height={350} />
+							<FlareComponent
+								file="rive_files/lab.flr"
+								animationName="lab"
+								transparent="true"
+								width={600}
+								height={350}
+							/>
 						</div>
 					</div>
 					<div className="row">
-						<h1 style={{ marginLeft: '52%', marginBottom: '10px', backgroundColor: '#95aedd', borderRadius: '10px' }}>
+						<h1
+							style={{
+								marginLeft: '52%',
+								marginBottom: '10px',
+								backgroundColor: '#95aedd',
+								borderRadius: '10px',
+							}}
+						>
 							&nbsp; THEMES &nbsp;
 						</h1>
 					</div>
